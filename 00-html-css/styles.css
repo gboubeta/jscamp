@@ -43,9 +43,12 @@ body {
 h1 {
   font-size: 2.25rem;
   font-weight: 900;
-  margin-bottom: 1rem;
   line-height: 1.2;
   text-wrap: balance;
+}
+
+main h1 {
+    margin-bottom: 1rem;
 }
 
 h1 + p {
@@ -62,6 +65,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  height: 4rem;
 
   h2 {
     font-size: 1.25rem;
@@ -71,8 +75,7 @@ header {
 }
 
 /* Navegación del header a otras páginas */
-nav {
-  align-items: center;
+header nav {
   gap: 1rem;
   display: flex;
 
@@ -91,6 +94,8 @@ nav {
 
 header div {
   display: flex;
+  align-items: center;
+  justify-items: center;
   align-items: center;
   gap: 1rem;
 
@@ -112,9 +117,6 @@ header div {
     height: 40px;
     border-radius: 100%;
     object-fit: cover;
-
-    /* Quitar el background del padre */
-    background-color: transparent;
   }
 }
 
